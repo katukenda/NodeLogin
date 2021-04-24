@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-body">
+<form action="/auth/register" method="POST">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name">
+    </div>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email">
+
+    </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+
+    </div>
+     <div class="form-group">
+        <label for="password">Password confirm</label>
+        <input type="password" id="passwordConfirm" name="passwordConfirm">
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+
+</form>
+
+  {{#if message }}
+    <h4>{{message}}</h4>
+    {{/if}}
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+</body>
+</html>

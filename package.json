@@ -1,7 +1,7 @@
 {
   "name": "NodeLogin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Login and registration with node, express, mysql",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

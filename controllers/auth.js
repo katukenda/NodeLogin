@@ -16,7 +16,6 @@ const{email, password} =req.body;
 if(!email || !password){
     return res.status(400).render('login', {
         message:' please provide an email and password'
-
     })
 }
 db.query('SELECT * FROM users WHERE email =?', [email], async(error, results) =>{
